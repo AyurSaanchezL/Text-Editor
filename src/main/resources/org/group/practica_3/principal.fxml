@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<?import org.group.practica_3.component.ProgressLabel?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="840.0" stylesheets="@principal.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.group.practica_3.MainController">
+    <Label id="titulo" layoutX="138.0" layoutY="28.0" stylesheets="@principal.css" text="EMBELLECEDOR DE TEXTO">
+        <font>
+            <Font name="Roboto" size="12.0" />
+        </font>
+    </Label>
+    <AnchorPane fx:id="textEditorContainer" layoutX="16.0" layoutY="76.0" prefHeight="294.0" prefWidth="490.0" stylesheets="@principal.css">
+        <Label fx:id="lblPrompt" layoutX="5.0" layoutY="5.0" text="Insertar texto..." textFill="#6a6a6a" />
+    </AnchorPane>
+    <TextField fx:id="txtBuscado" layoutX="449.0" layoutY="25.0" prefHeight="26.0" prefWidth="150.0" promptText="Buscador..." stylesheets="@principal.css" />
+    <Button fx:id="btnBuscar" accessibleText="Buscar" layoutX="656.0" layoutY="23.0" mnemonicParsing="false" onAction="#doBuscar" text="🔎">
+
+    </Button>
+    <Button fx:id="btnReemplazar" layoutX="717.0" layoutY="23.0" mnemonicParsing="false" onAction="#doReemplazar" prefHeight="23.0" prefWidth="65.0" text="Reemplazar">
+
+    </Button>
+    <Button fx:id="btnNegrita" layoutX="523.0" layoutY="105.0" mnemonicParsing="false" onAction="#doNegrita" prefWidth="29.0" text="Aa">
+
+    </Button>
+    <Button fx:id="btnCursiva" layoutX="523.0" layoutY="175.0" mnemonicParsing="false" onAction="#doCursiva" text="Aa">
+
+    </Button>
+    <Button fx:id="btnMayus" layoutX="666.0" layoutY="105.0" mnemonicParsing="false" onAction="#doMayusculas" text="AA">
+
+    </Button>
+    <Button fx:id="btnMinus" layoutX="666.0" layoutY="175.0" mnemonicParsing="false" onAction="#doMinusculas" text="aa">
+
+    </Button>
+    <Button fx:id="btnReves" layoutX="666.0" layoutY="245.0" mnemonicParsing="false" onAction="#doAlReves" text="aA">
+
+    </Button>
+    <Button fx:id="btnEspacios" layoutX="523.0" layoutY="244.0" mnemonicParsing="false" onAction="#doQuitarEspacios" text="_ _">
+
+    </Button>
+    <Label fx:id="lblNegrita" layoutX="581.0" layoutY="121.0" text="Negrita">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Label>
+    <Label fx:id="lblCursiva" layoutX="581.0" layoutY="191.0" text="Cursiva">
+        <font>
+            <Font name="System Italic" size="12.0" />
+        </font>
+    </Label>
+    <Label fx:id="lblMayus" layoutX="725.0" layoutY="121.0" text="Mayúsculas" />
+    <Label fx:id="lblMinus" layoutX="725.0" layoutY="191.0" text="minúsculas" />
+    <Label fx:id="lblVoltear" layoutX="725.0" layoutY="261.0" text="Voltear" />
+    <Label fx:id="lblEspacios" layoutX="580.0" layoutY="232.0" prefHeight="74.0" prefWidth="66.0" text="Eliminar espacios" wrapText="true" />
+    <Button fx:id="btnCopiar" accessibleHelp="Copiar" accessibleText="Copiar" layoutX="41.0" layoutY="381.0" mnemonicParsing="false" onAction="#doCopiar" text="📋">
+
+    </Button>
+    <Button fx:id="btnLimpiar" accessibleText="Limpiar" layoutX="108.0" layoutY="381.0" mnemonicParsing="false" onAction="#doLimpiar" text="CL">
+
+    </Button>
+    <ChoiceBox fx:id="cboxContadores" layoutX="397.0" layoutY="390.0" prefHeight="24.0" prefWidth="102.0" />
+    <Label fx:id="lblContador" alignment="CENTER_RIGHT" layoutX="355.0" layoutY="396.0" prefHeight="19.0" prefWidth="38.0" text="0" textAlignment="RIGHT" />
+    <Button fx:id="btnReiniciar" layoutX="690.0" layoutY="387.0" mnemonicParsing="false" onAction="#doReiniciar" text="🔄">
+
+    </Button>
+    <Label fx:id="lblReiniciar" layoutX="748.0" layoutY="403.0" text="Reiniciar" />
+    <Label fx:id="lblContenidoCopiado" layoutX="108.0" layoutY="322.0" text="Contenido copiado al portapapeles" />
+    <Label fx:id="lblImportarExportar" layoutX="164.5" layoutY="322.0" />
+    <Label fx:id="lblAtajoTeclado" alignment="CENTER" layoutX="581.0" layoutY="322.0" prefHeight="35.0" prefWidth="246.0" text="Atajo de teclado perdido: Ctrl+C" />
+    <Button fx:id="btnGuardar" layoutX="560.0" layoutY="391.0" mnemonicParsing="false" onAction="#doGuardar" prefHeight="48.0" prefWidth="65.0" text="Guardar estado" textAlignment="CENTER" wrapText="true" />
+    <Label fx:id="lblGuardar" alignment="CENTER" layoutX="581.0" layoutY="323.0" prefHeight="35.0" prefWidth="246.0" text="Contenido guardado con éxito" />
+    <Button fx:id="btnAbrir" layoutX="221.0" layoutY="376.0" mnemonicParsing="false" onAction="#doAbrir" prefHeight="23.0" prefWidth="65.0" text="Abrir" />
+    <Button fx:id="btnExportar" layoutX="221.0" layoutY="411.0" mnemonicParsing="false" onAction="#doExportar" prefHeight="23.0" prefWidth="65.0" text="Exportar" />
+    <ProgressLabel fx:id="pgssLabel" layoutX="135.0" layoutY="331.0"/>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b8b9b9" height="63.0" layoutY="449.0" stroke="TRANSPARENT" strokeType="INSIDE" width="840.0" />
+    <Label fx:id="lblComando" alignment="CENTER" layoutY="472.0" text="Label" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   <ToggleButton fx:id="tglBtnVoz" layoutX="49.0" layoutY="468.0" mnemonicParsing="false" onAction="#doToggleVoice" text="ToggleButton" />
+
+</AnchorPane>

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.root {
+    -fx-background-color: #E3D6BA;
+    -fx-font-family: 'Roboto', sans-serif;
+}
+
+.text-field{
+    -fx-background-color: white;
+    -fx-prompt-text-fill: #494949;
+    -fx-font-weight: normal;
+    -fx-font-size: 11px;
+}
+
+.image-view{
+    -fx-cursor:  hand;
+}
+
+.text-field{
+    -fx-padding: 8px 10px;
+    -fx-background-radius: 10;
+    -fx-pref-width: 200px;
+    -fx-font-size: 10px;
+}
+
+.button{
+    -fx-background-color: #A6CADD;
+    -fx-background-radius: 100%;
+    -fx-pref-width: 48px;
+    -fx-pref-height: 48px;
+    -fx-font-size: 16px;
+    -fx-cursor:  hand;
+}
+
+#lblContenidoCopiado, #lblAtajoTeclado, #lblGuardar, #lblImportarExportar{
+    -fx-background-color: rgba(213, 186, 105, 0.5);
+    -fx-padding: 8px 10px;
+    -fx-background-radius: 10px;
+}
+
+#lblImportarExportar{
+    -fx-background-color: rgba(226, 205, 100, 0.8);
+}
+
+#lblPrompt{
+    -fx-font-size: 12px;
+}
+
+#btnBuscar{
+    -fx-pref-width: 32px;
+    -fx-pref-height: 32px;
+    -fx-font-size: 12px;
+}
+
+#btnReemplazar, #btnGuardar{
+    -fx-prompt-text-fill: #494949;
+    -fx-font-weight: normal;
+    -fx-background-radius: 10px;
+    -fx-font-size: 12px;
+    -fx-pref-width: 90px;
+    -fx-pref-height: 32px;
+}
+
+#btnGuardar{
+    -fx-pref-height: 40px;
+}
+
+#btnAbrir, #btnExportar, #tglBtnVoz{
+    -fx-background-color: rgba(226, 205, 100, 0.9);
+    -fx-pref-width: 80px;
+    -fx-pref-height: 28px;
+    -fx-font-size: 12px;
+    -fx-background-radius: 10px;
+}
+
+#btnAbrir:hover, #btnExportar:hover, #tglBtnVoz:hover{
+    -fx-background-color: rgba(199, 183, 95, 0.9);
+}
+
+.label{
+    -fx-font-size: 15px;
+}
+
+#btnNegrita, #lblNegrita{
+    -fx-font-weight: bold;
+}
+
+#btnCursiva, #lblCursiva{
+    -fx-font-style: italic;
+}
+
+#titulo {
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+#cboxContadores{
+    -fx-background-color: #A6CADD;
+}
+
+.choice-box .arrow{
+    -fx-background-color: black;
+}
+
+.button:hover{
+    -fx-background-color: #91b5c9;
+}
+
+.styled-text-area {
+    -fx-padding: 5px;
+}
+
+.bold-text {
+    -fx-font-weight: bold;
+    -fx-font-style: normal;
+}
+
+.italic-text {
+    -fx-font-weight: normal;
+    -fx-font-style: italic;
+}
+
+.bold-and-italic{
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.not-bold{
+    -fx-font-weight: normal;
+}
+
+.not-italic {
+    -fx-font-style: normal;
+}
+
+.normal {
+    -fx-font-weight: normal;
+    -fx-font-style: normal;
+    -fx-underline: false;
+}
+
+#lblComando {
+    -fx-font-family: "Roboto Lt";
+}
+
+#tglBtnVoz {
+    -fx-pref-width: 125px;
+}
+

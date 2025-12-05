@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.root {
+    -fx-background-color: white;
+    -fx-font-family: 'Roboto', sans-serif;
+}
+
+.button{
+    -fx-background-color: #A6CADD;
+    -fx-background-radius: 100px;
+    -fx-pref-width: inherit;
+    -fx-pref-height: inherit;
+    -fx-font-size: 16px;
+    -fx-cursor:  hand;
+}
+
+#lblTitulo{
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.text-field{
+    -fx-padding: 8px 10px;
+    -fx-background-radius: 10;
+    -fx-pref-width: 200px;
+    -fx-font-size: 10px;
+}
+
+.button:hover{
+    -fx-background-color: #91b5c9;
+}

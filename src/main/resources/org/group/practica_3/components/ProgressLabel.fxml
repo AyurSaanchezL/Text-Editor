@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root type="javafx.scene.layout.HBox" spacing="10"
+         xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml">
+    <ProgressBar fx:id="progressBar" prefWidth="200"/>
+    <Label fx:id="lblProgressBarText" text="0%"/>
+</fx:root>

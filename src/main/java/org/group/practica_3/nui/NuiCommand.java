@@ -1,0 +1,6 @@
+package org.group.practica_3.nui;
+
+public enum NuiCommand {
+    ABRIR, GUARDAR, EXPORTAR, NEGRITA, CURSIVA, INVERTIR,
+    ESPACIOS, MAYUSCULAS, MINUSCULAS, LIMPIAR, COPIAR, REINICIAR
+}
