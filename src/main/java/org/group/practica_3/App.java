@@ -7,6 +7,7 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 public class App extends Application {
@@ -17,14 +18,14 @@ public class App extends Application {
         primaryStage = stage;
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("principal.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 840, 512);
-        stage.setTitle("EMBELLECEDOR - Ayur Sánchez Lozano");
+        stage.getIcons().add(new Image(App.class.getResourceAsStream("icon/Icono.png")));
+        stage.setTitle("TextBella - Ayur Sánchez Lozano");
         stage.setResizable(false);
         stage.setFullScreen(false);
         stage.setScene(scene);
         stage.show();
 
     }
-
 
     public static void main(String[] args) {
         launch();
