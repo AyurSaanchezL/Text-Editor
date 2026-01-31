@@ -42,6 +42,7 @@ public class NuiSpeechService {
 
                 mic.open(format);
                 mic.start();
+                System.out.println("ESCUCHANDO");
 
                 byte[] buffer = new byte[4096]; // Buffer para almacenar los datos de audio temporalmente
 

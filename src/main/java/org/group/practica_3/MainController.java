@@ -529,6 +529,7 @@ public class MainController implements Initializable {
         // VOZ Y COMANDOS
         NuiController controller = new NuiController(this);
         NuiSpeechService speechService = new NuiSpeechService(controller, this);
+        speechService.start();
          // Empieza a escuchar
         resetCommand();
         estaDictando = false;
